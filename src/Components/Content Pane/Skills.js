@@ -387,25 +387,25 @@ const Skills = () => {
   return (
     <div className="flex flex-col gap-10 ">
       <div className="flex justify-center items-center">
-        <span className="font-poppins text-gray-500 font-[500] text-lg md:text-xl">
+        <span className="font-poppins text-gray-500 font-[500] text-md md:text-xl">
           Tech Stacks
         </span>
       </div>
 
-      <div className="flex flex-row gap-5 overflow-hidden">
+      <div className="flex flex-row gap-5  overflow-hidden">
         <div className=" animate-infinite-scroll flex flex-row gap-5  ">
           {skillsTech.map((skill) => {
             return (
               <div className="">
                 <Card
                   key={skill.id}
-                  className="flex items-center justify-center dark:bg-gray-900"
+                  className="flex items-center justify-center  dark:bg-gray-900"
                   aria-hidden="true"
                 >
                   <CardBody>
                     <Typography>{skill.icon}</Typography>
                   </CardBody>
-                  <CardFooter className="pt-0 dark:text-white font-poppins text-md md:text-lg">
+                  <CardFooter className="pt-0 dark:text-white font-poppins text-sm md:text-md">
                     {skill.text}
                   </CardFooter>
                 </Card>
@@ -428,7 +428,7 @@ const Skills = () => {
                   <CardBody>
                     <Typography>{skill.icon}</Typography>
                   </CardBody>
-                  <CardFooter className="pt-0 dark:text-white font-poppins text-md md:text-lg">
+                  <CardFooter className="pt-0 dark:text-white font-poppins text-sm md:text-md">
                     {skill.text}
                   </CardFooter>
                 </Card>

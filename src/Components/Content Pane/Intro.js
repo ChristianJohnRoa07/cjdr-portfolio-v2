@@ -2,7 +2,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className="px-20 md:px-28 pt-[23%]">
+    <div className="px-20 md:px-24 pt-[23%]">
       <div className="text-justify ">
         <span className="font-poppins text-sm  md:text-lg text-gray-500 ">
           A <span className="text-black dark:text-white">highly motivated</span>{" "}

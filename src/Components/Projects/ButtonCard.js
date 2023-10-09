@@ -235,7 +235,7 @@ const ButtonCard = () => {
     <div className="flex flex-col justify-center items-center gap-10">
       {projectsCreated.map((proj) => {
         return (
-          <Card className=" w-[500px] md:w-[800px]">
+          <Card className=" w-[400px] md:w-[700px]">
             <a
               key={proj.id}
               href={proj.projLink}
@@ -270,13 +270,13 @@ const ButtonCard = () => {
                       <Typography
                         variant="h6"
                         color="blue-gray"
-                        className="mb-2 text-start font-poppins text-md md:text-lg dark:text-white "
+                        className="mb-2 text-start font-poppins text-sm md:text-md dark:text-white "
                       >
                         {proj.projName}
                       </Typography>
                       <Typography
                         variant="h8"
-                        className="text-justify font-poppins text-sm md:text-lg  dark:text-white"
+                        className="text-start md:text-justify font-poppins text-sm md:text-md  dark:text-white"
                       >
                         {proj.projDescription}
                       </Typography>

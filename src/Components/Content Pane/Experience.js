@@ -105,17 +105,17 @@ const Experience = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <Card className=" w-[500px] md:w-[800px]">
+      <Card className=" w-[400px] md:w-[700px]">
         <button className=" bg-gray-100 hover:bg-gray-300  dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg hover:border-2 hover:border-cyan-900 hover:rounded-lg">
           {experiences.map((experience) => {
             return (
               <CardBody className="">
                 <div className="flex flex-row gap-2 md:gap-3">
-                  <div className="w-[100%]">
+                  <div className="w-[600px] md:w-[110%]">
                     <Typography
                       variant="h8"
                       color="blue-gray"
-                      className="mb-2 font-poppins text-md md:text-lg dark:text-white"
+                      className="mb-2 font-poppins text-xs md:text-lg dark:text-white"
                     >
                       {experience.duration}
                     </Typography>
@@ -129,12 +129,12 @@ const Experience = () => {
                     >
                       {experience.companyName}
                     </Typography>
-                    <Typography className="text-justify font-poppins text-sm md:text-lg dark:text-white">
+                    <Typography className="text-justify font-poppins text-sm md:text-md dark:text-white">
                       {experience.jobDescription}
                     </Typography>
                     <Typography
                       variant="h6"
-                      className="text-justify font-poppins text-md md:text-lg dark:text-gray-400"
+                      className="text-justify font-poppins text-sm md:text-md dark:text-gray-400"
                     >
                       Techs Learned:
                     </Typography>
