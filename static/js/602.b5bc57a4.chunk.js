@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcjdr_portfolio_v2=self.webpackChunkcjdr_portfolio_v2||[]).push([[602],{6602:function(e,l,n){n.r(l);var r=n(2791),t=n(184),c=(0,r.lazy)((function(){return Promise.all([n.e(139),n.e(974)]).then(n.bind(n,3571))}));l.default=function(){return(0,t.jsx)("div",{className:"flex flex-col mt-60 gap-10",children:(0,t.jsx)("div",{className:"flex justify-center items-center",children:(0,t.jsx)(c,{})})})}}}]);
+//# sourceMappingURL=602.b5bc57a4.chunk.js.map
