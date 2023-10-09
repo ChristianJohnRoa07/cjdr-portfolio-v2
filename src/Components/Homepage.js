@@ -20,7 +20,7 @@ const Homepage = () => {
         transition={{ duration: 0.5, ease: "linear" }}
       >
         <div className=" flex flex-col md:flex-row h-screen">
-          <div className=" h-[350px]  md:w-[560px] ">
+          <div className=" h-[350px]  md:w-[350px] lg:w-[560px] ">
             <TabPane
               setDarkModeStatus={setDarkModeStatus}
               isDarkMode={isDarkMode}

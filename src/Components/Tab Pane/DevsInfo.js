@@ -5,12 +5,12 @@ import Typed from "react-typed";
 const DevsInfo = () => {
   const texts = ["Junior Frontend Developer", "Aspiring Fullstack Developer"];
   return (
-    <div className=" w-[300px]  md:w-[480px]">
+    <div className=" w-[300px]  md:w-[300px] lg:w-[480px]">
       <div className="flex flex-col gap-1 text-black dark:text-white">
-        <span className="font-poppins font-[800] text-3xl md:text-5xl">
+        <span className="font-poppins font-[800] text-3xl md:text-3xl lg:text-5xl">
           Christian John Roa
         </span>
-        <span className="font-poppins font-[500] text-lg md:text-xl">
+        <span className="font-poppins font-[500] text-md md:text-lg lg:text-xl">
           <Typed strings={texts} typeSpeed={40} backSpeed={50} loop />
         </span>
       </div>

@@ -235,7 +235,7 @@ const ButtonCard = () => {
     <div className="flex flex-col justify-center items-center gap-10">
       {projectsCreated.map((proj) => {
         return (
-          <Card className=" w-[400px] md:w-[700px]">
+          <Card className=" w-[400px] md:w-[400px] lg:w-[700px]">
             <a
               key={proj.id}
               href={proj.projLink}

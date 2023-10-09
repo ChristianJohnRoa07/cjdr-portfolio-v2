@@ -16,7 +16,7 @@ const TopComponent = (props) => {
     "https://firebasestorage.googleapis.com/v0/b/flutter-cv-section.appspot.com/o/Christian_John_Roa_CV.pdf?alt=media&token=afa98c74-6567-4612-ad7e-f5688eb5faa1";
 
   return (
-    <div className="flex flex-row items-center justify-center gap-20 md:gap-72">
+    <div className="flex flex-row items-center justify-center gap-20 md:gap-28 lg:gap-72">
       <div>
         <Switch
           onClick={() => {
@@ -30,7 +30,7 @@ const TopComponent = (props) => {
           <Button
             
             variant="outlined"
-            className="flex items-center gap-3 dark:text-white dark:border-white"
+            className="flex items-center gap-3   dark:text-white dark:border-white"
           >
             Download CV
             <div>

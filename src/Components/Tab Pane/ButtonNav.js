@@ -27,7 +27,7 @@ const ButtonNav = () => {
   };
 
   return (
-    <div className="w-[300px] md:w-[450px]  hidden md:block ">
+    <div className="w-[300px] md:w-[300px] lg:w-[450px]  hidden md:block ">
       <div className="flex flex-col gap-5 justify-start items-start text-black dark:text-white ">
         <BrowserRouter>
           {buttonNav.map((btn) => {
@@ -52,7 +52,7 @@ const ButtonNav = () => {
                         : "hover:text-cyan-600"
                     }`}
                   >
-                    <span className="font-poppins font-[400] text-md md:text-lg ">
+                    <span className="font-poppins font-[400]  md:text-md lg:text-lg ">
                       {btn.btnName}
                     </span>
                   </motion.button>

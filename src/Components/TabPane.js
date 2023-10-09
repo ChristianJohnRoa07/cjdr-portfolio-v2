@@ -9,7 +9,7 @@ const TopComponent = lazy(() => import("./Tab Pane/TopComponent"));
 const TabPane = (props) => {
   const { setDarkModeStatus, isDarkMode } = props;
   return (
-    <div className="flex flex-col gap-10 md:gap-20 mt-10 md:mt-0 justify-center items-center h-[300px] md:h-screen ">
+    <div className="flex flex-col gap-10 md:gap-16 lg:gap-20 mt-10 md:mt-0 justify-center items-center h-[300px] md:h-screen ">
       <TopComponent
         setDarkModeStatus={setDarkModeStatus}
         isDarkMode={isDarkMode}
