@@ -247,7 +247,7 @@ const ButtonCard = () => {
               >
                 <button
                   key={proj.id}
-                  className=" bg-gray-100 hover:bg-gray-300  dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg  hover:rounded-lg"
+                  className="group bg-gray-100 hover:bg-gray-200  dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg  hover:rounded-lg"
                 >
                   <CardBody key={proj.id} className="">
                     <div className="flex flex-row gap-5">
@@ -275,17 +275,23 @@ const ButtonCard = () => {
                       </div>
 
                       <div className="flex flex-col gap-2 w-[70%]">
-                        <div className="flex flex-row gap-5">
+                        <div className="flex flex-row gap-2">
                           <Typography
                             variant="h6"
                             color="blue-gray"
-                            className="mb-2 text-start font-poppins text-sm md:text-md dark:text-white "
+                            className="mb-2 text-start font-poppins text-sm md:text-md dark:text-white group-hover:text-cyan-700"
                           >
                             {proj.projName}
                           </Typography>
 
                           {proj.projLink !== null ? (
-                            <div className="flex justify-end dark:fill-white">
+                            <div className="flex justify-end dark:fill-white group-hover:transition 
+                            group-hover:ease-in-out 
+                            group-hover:delay-20
+                            group-hover:translate-x-3 
+                            group-hover:scale-110 
+                            group-hover:fill-cyan-700
+                            ">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="24"

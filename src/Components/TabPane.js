@@ -12,10 +12,7 @@ const TabPane = (props) => {
   const { setDarkModeStatus, isDarkMode } = props;
   return (
     <div
-      variants={fadeIn("right", 0.3)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ amount: 0.7 }}
+      
       className="flex flex-col gap-10 md:gap-16 lg:gap-20 mt-10 md:mt-0 justify-center items-center h-[300px] md:h-screen "
     >
       <TopComponent

@@ -1,4 +1,5 @@
 import { React, lazy, useEffect, useState, Suspense } from "react";
+
 import "./App.css";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,6 +17,8 @@ const App = () => {
       setLoading(false);
     }, 3000);
   }, []);
+
+
 
   return (
     <div>
@@ -38,6 +41,7 @@ const App = () => {
           <Homepage />
         )} */}
 
+       
         <Suspense
           fallback={
             <motion.div

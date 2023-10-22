@@ -33,11 +33,7 @@ const ButtonNav = () => {
           {buttonNav.map((btn) => {
             return (
               <AnimatePresence key={btn.id}>
-                <HashLink
-                 
-                  to={btn.link}
-                  
-                >
+                <HashLink to={btn.link}>
                   <motion.button
                     variants={variants}
                     animate={
@@ -49,10 +45,10 @@ const ButtonNav = () => {
                     className={` ${
                       btn.id === activeIdButton
                         ? " text-cyan-600 dark:text-cyan-600"
-                        : "hover:text-cyan-600"
+                        : "   hover:text-cyan-600"
                     }`}
                   >
-                    <span className="font-poppins font-[400]  md:text-md lg:text-lg ">
+                    <span className=" font-poppins font-[400]  md:text-md lg:text-lg ">
                       {btn.btnName}
                     </span>
                   </motion.button>

@@ -106,7 +106,7 @@ const Experience = () => {
   return (
     <div className="flex justify-center items-center">
       <Card className=" w-[400px] md:w-[700px]">
-        <button className=" bg-gray-100 hover:bg-gray-300  dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg ">
+        <button className="group bg-gray-100 hover:bg-gray-200  dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg ">
           {experiences.map((experience) => {
             return (
               <CardBody className="">
@@ -125,7 +125,7 @@ const Experience = () => {
                     <Typography
                       variant="h5"
                       color="blue-gray"
-                      className="mb-2 text-start font-poppins text-md md:text-lg dark:text-white"
+                      className="group-hover:text-cyan-700 mb-2 text-start font-poppins text-md md:text-lg dark:text-white"
                     >
                       {experience.companyName}
                     </Typography>
