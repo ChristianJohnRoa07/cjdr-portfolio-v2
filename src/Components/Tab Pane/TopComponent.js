@@ -28,7 +28,7 @@ const TopComponent = (props) => {
       <div>
         <a href={link} rel="noreferrer" target="_blank">
           <Button
-            
+            size="sm"
             variant="outlined"
             className="flex items-center gap-3   dark:text-white dark:border-white"
           >

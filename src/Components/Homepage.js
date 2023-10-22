@@ -1,4 +1,4 @@
-import { React, lazy, useState } from "react";
+import { React, lazy, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ContentPane = lazy(() => import("./ContentPane"));
@@ -10,8 +10,9 @@ const variants = {
 };
 
 const Homepage = () => {
+
   const [isDarkMode, setDarkModeStatus] = useState(false);
-  console.log("Darkmode: " + isDarkMode);
+
   return (
     <AnimatePresence>
       <motion.div
@@ -20,12 +21,13 @@ const Homepage = () => {
         transition={{ duration: 0.5, ease: "linear" }}
       >
         <div className=" flex flex-col md:flex-row h-screen">
-          <div className=" h-[350px]  md:w-[350px] lg:w-[560px] ">
+          <motion.div className="sticky h-[350px] md:w-[350px] lg:w-[560px] "
+          >
             <TabPane
               setDarkModeStatus={setDarkModeStatus}
               isDarkMode={isDarkMode}
             />
-          </div>
+          </motion.div>
           <div className=" w-full flex-1 flex overflow-hidden">
             <ContentPane />
           </div>

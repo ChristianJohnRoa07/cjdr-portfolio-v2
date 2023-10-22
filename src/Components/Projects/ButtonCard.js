@@ -1,18 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import Hobo from "../images/HOBO.png";
 import MERNTodo from "../images/mernTodoApp.png";
 import OJT from "../images/OJT_Collage.png";
 import RNR from "../images/rnr.png";
 
-import Experience from "../Content Pane/Experience";
+import { motion } from "framer-motion";
 
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+import { useScroll } from "framer-motion";
+
+import { Card, CardBody, Typography } from "@material-tailwind/react";
 
 const ButtonCard = () => {
   const projectsCreated = [
@@ -231,11 +227,13 @@ const ButtonCard = () => {
     },
   ];
 
+  const ref = useRef(null);
+
   return (
     <div className="flex flex-col justify-center items-center gap-10">
       {projectsCreated.map((proj) => {
         return (
-          <Card className=" w-[400px] md:w-[400px] lg:w-[700px]">
+          <Card ref={ref} className=" w-[400px] md:w-[400px] lg:w-[700px]">
             <a
               key={proj.id}
               href={proj.projLink}
@@ -267,13 +265,31 @@ const ButtonCard = () => {
                     </div>
 
                     <div className="flex flex-col gap-2 w-[70%]">
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-2 text-start font-poppins text-sm md:text-md dark:text-white "
-                      >
-                        {proj.projName}
-                      </Typography>
+                      <div className="flex flex-row gap-5">
+                        <Typography
+                          variant="h6"
+                          color="blue-gray"
+                          className="mb-2 text-start font-poppins text-sm md:text-md dark:text-white "
+                        >
+                          {proj.projName}
+                        </Typography>
+
+                        {proj.projLink !== null ? (
+                          <div className="flex justify-end dark:fill-white">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 -960 960 960"
+                              width="24"
+                            >
+                              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+                            </svg>
+                          </div>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+
                       <Typography
                         variant="h8"
                         className="text-start md:text-justify font-poppins text-sm md:text-md  dark:text-white"

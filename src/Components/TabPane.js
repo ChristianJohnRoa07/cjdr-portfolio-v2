@@ -24,11 +24,11 @@ const TabPane = (props) => {
         >
           {" "}
           <Button
-            size="lg"
+            size="sm"
             variant="outlined"
             className="flex items-center gap-3 dark:border-white dark:text-white dark:fill-white"
           >
-            CJDR V1 ©
+            CJDR V1 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
