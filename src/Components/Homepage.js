@@ -1,5 +1,6 @@
 import { React, lazy, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { fadeIn } from "./Variants";
 
 const ContentPane = lazy(() => import("./ContentPane"));
 const TabPane = lazy(() => import("./TabPane"));
@@ -10,7 +11,6 @@ const variants = {
 };
 
 const Homepage = () => {
-
   const [isDarkMode, setDarkModeStatus] = useState(false);
 
   return (
@@ -21,16 +21,27 @@ const Homepage = () => {
         transition={{ duration: 0.5, ease: "linear" }}
       >
         <div className=" flex flex-col md:flex-row h-screen">
-          <motion.div className="sticky h-[350px] md:w-[350px] lg:w-[560px] "
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ amount: 0.1 }}
+            className="sticky h-[350px] md:w-[350px] lg:w-[560px] "
           >
             <TabPane
               setDarkModeStatus={setDarkModeStatus}
               isDarkMode={isDarkMode}
             />
           </motion.div>
-          <div className=" w-full flex-1 flex overflow-hidden">
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ amount: 0.1 }}
+            className=" w-full flex-1 flex overflow-hidden"
+          >
             <ContentPane />
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </AnimatePresence>

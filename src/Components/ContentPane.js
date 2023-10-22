@@ -6,7 +6,7 @@ const Projects = lazy(() => import("./Projects"));
 
 const ContentPane = () => {
   return (
-    <div className="overflow-y-scroll pb-20 flex flex-col ">
+    <div className="overflow-y-scroll pb-10  flex flex-col ">
       <div id="about">
         <AboutMe />
       </div>
