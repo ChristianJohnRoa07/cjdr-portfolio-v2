@@ -15,7 +15,7 @@ const Intro = () => {
             Software Development
           </span>
           . Eager to grow and further develop skills while contributing to
-          innovative projects and the company
+          innovative projects and the company.
         </span>
       </div>
     </div>

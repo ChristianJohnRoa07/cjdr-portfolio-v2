@@ -4,7 +4,6 @@ import MERNTodo from "../images/mernTodoApp.png";
 import OJT from "../images/OJT_Collage.png";
 import RNR from "../images/rnr.png";
 
-
 import { motion } from "framer-motion";
 import { fadeIn } from "../Variants";
 
@@ -252,7 +251,7 @@ const ButtonCard = () => {
                 >
                   <CardBody key={proj.id} className="">
                     <div className="flex flex-row gap-5">
-                      <div className="flex flex-col gap-7">
+                      <div className="flex flex-col gap-5">
                         <Typography>
                           <img
                             width={250}
@@ -263,10 +262,15 @@ const ButtonCard = () => {
                             alt="hobo"
                           />
                         </Typography>
-                        <div className="flex flex-row gap-3">
-                          {proj.projTechs.map((projTech) => {
-                            return <div key={projTech.id}>{projTech.icon}</div>;
-                          })}
+                        <div className="flex justify-center ">
+                         
+                          <div className="flex flex-row gap-3">
+                            {proj.projTechs.map((projTech) => {
+                              return (
+                                <div key={projTech.id}>{projTech.icon}</div>
+                              );
+                            })}
+                          </div>
                         </div>
                       </div>
 
@@ -298,7 +302,7 @@ const ButtonCard = () => {
 
                         <Typography
                           variant="h8"
-                          className="text-start md:text-justify font-poppins text-sm md:text-md  dark:text-white"
+                          className="text-start md:text-justify font-poppins text-sm md:text-md  text-gray-700 dark:text-gray-500"
                         >
                           {proj.projDescription}
                         </Typography>

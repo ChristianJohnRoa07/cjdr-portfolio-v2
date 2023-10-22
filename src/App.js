@@ -3,7 +3,7 @@ import "./App.css";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "./Components/Variants";
-import CJDR from "../src/3D_Portfolio_logo.png";
+
 const Homepage = lazy(() => import("./Components/Homepage"));
 
 const PropagateLoader = lazy(() => import("react-spinners/PropagateLoader"));
