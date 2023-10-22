@@ -289,14 +289,14 @@ const ButtonCard = () => {
                             group-hover:ease-in-out 
                             group-hover:delay-20
                             group-hover:translate-x-3 
-                            group-hover:scale-110 
+                            group-hover:scale-125 
                             group-hover:fill-cyan-700
                             ">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                height="24"
+                                height="18"
                                 viewBox="0 -960 960 960"
-                                width="24"
+                                width="18"
                               >
                                 <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
                               </svg>
