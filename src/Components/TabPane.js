@@ -11,10 +11,7 @@ const TopComponent = lazy(() => import("./Tab Pane/TopComponent"));
 const TabPane = (props) => {
   const { setDarkModeStatus, isDarkMode } = props;
   return (
-    <div
-      
-      className="flex flex-col gap-6  md:gap-16 lg:gap-20 mt-5 md:mt-0 justify-center items-center h-[250px] md:h-screen "
-    >
+    <div className="flex flex-col gap-6  md:gap-16 lg:gap-20 mt-5 md:mt-0 justify-center items-center h-[250px] md:h-screen ">
       <TopComponent
         setDarkModeStatus={setDarkModeStatus}
         isDarkMode={isDarkMode}
@@ -29,19 +26,29 @@ const TabPane = (props) => {
         >
           {" "}
           <Button
-            size="sm"
+            size="md"
             variant="outlined"
-            className="flex items-center gap-3 dark:border-white dark:text-white dark:fill-white"
+            className="flex group items-center gap-1 dark:border-white dark:text-white dark:fill-white"
           >
             CJDR V1
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24"
-              viewBox="0 -960 960 960"
-              width="24"
+            <div
+              className="group-hover:transition 
+            group-hover:ease-in-out 
+            group-hover:delay-20
+            group-hover:-translate-y-1 
+            group-hover:translate-x-2
+               
+            "
             >
-              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                viewBox="0 -960 960 960"
+                width="20"
+              >
+                <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
+              </svg>
+            </div>
           </Button>
         </a>
       </div>
