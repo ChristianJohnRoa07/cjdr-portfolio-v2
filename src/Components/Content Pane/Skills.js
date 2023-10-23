@@ -399,13 +399,13 @@ const Skills = () => {
               <div className="">
                 <Card
                   key={skill.id}
-                  className="flex items-center justify-center  dark:bg-gray-900"
+                  className="group  flex items-center justify-center dark:bg-gray-900"
                   aria-hidden="true"
                 >
                   <CardBody>
-                    <Typography>{skill.icon}</Typography>
+                    <Typography className="opacity-60 group-hover:opacity-100">{skill.icon}</Typography>
                   </CardBody>
-                  <CardFooter className="pt-0 dark:text-white font-poppins text-sm md:text-md">
+                  <CardFooter className="group-hover:text-cyan-700 pt-0 dark:text-white font-poppins text-sm md:text-md">
                     {skill.text}
                   </CardFooter>
                 </Card>
@@ -422,13 +422,13 @@ const Skills = () => {
               <div className="">
                 <Card
                   key={skill.id}
-                  className="dark:bg-gray-900"
+                  className="dark:bg-gray-900 group "
                   aria-hidden="true"
                 >
                   <CardBody>
-                    <Typography>{skill.icon}</Typography>
+                    <Typography className="opacity-60 group-hover:opacity-100">{skill.icon}</Typography>
                   </CardBody>
-                  <CardFooter className="pt-0 dark:text-white font-poppins text-sm md:text-md">
+                  <CardFooter className="group-hover:text-cyan-700 pt-0 dark:text-white font-poppins text-sm md:text-md">
                     {skill.text}
                   </CardFooter>
                 </Card>

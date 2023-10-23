@@ -3,8 +3,6 @@ import React from "react";
 import {
   Card,
   CardBody,
-  CardFooter,
-  CardHeader,
   Typography,
 } from "@material-tailwind/react";
 const Experience = () => {
@@ -106,10 +104,10 @@ const Experience = () => {
   return (
     <div className="flex justify-center items-center">
       <Card className=" w-[400px] md:w-[700px]">
-        <button className="group bg-gray-100 hover:bg-gray-200  dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg ">
+       
           {experiences.map((experience) => {
             return (
-              <CardBody className="">
+              <CardBody className="group bg-gray-100 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg ">
                 <div className="flex flex-row gap-2 md:gap-3">
                   <div className="w-[600px] md:w-[110%]">
                     <Typography
@@ -149,7 +147,7 @@ const Experience = () => {
               </CardBody>
             );
           })}
-        </button>
+       
       </Card>
     </div>
   );
