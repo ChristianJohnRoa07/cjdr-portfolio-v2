@@ -13,7 +13,7 @@ const TabPane = (props) => {
   return (
     <div
       
-      className="flex flex-col gap-10 md:gap-16 lg:gap-20 mt-10 md:mt-0 justify-center items-center h-[300px] md:h-screen "
+      className="flex flex-col gap-6  md:gap-16 lg:gap-20 mt-5 md:mt-0 justify-center items-center h-[250px] md:h-screen "
     >
       <TopComponent
         setDarkModeStatus={setDarkModeStatus}

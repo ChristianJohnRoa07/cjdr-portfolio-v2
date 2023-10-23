@@ -26,7 +26,7 @@ const Homepage = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ amount: 0.1 }}
-            className="sticky h-[350px] md:w-[350px] lg:w-[560px] "
+            className="sticky h-[280px] md:w-[350px] lg:w-[560px] "
           >
             <TabPane
               setDarkModeStatus={setDarkModeStatus}
