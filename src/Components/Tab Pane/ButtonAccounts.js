@@ -63,7 +63,7 @@ const ButtonAccounts = () => {
             <Tooltip
               key={btn.id}
               placement="bottom"
-              className=" px-3 py-2 text-black font-poppins font-[500] bg-gray-200 transition hover:ease-in"
+              className=" px-3 py-2 text-black font-poppins font-[500] bg-gray-300 dark:bg-gray-800 dark:text-white transition hover:ease-in"
               content={btn.btnName}
             >
               <a href={btn.link} rel="noreferrer" target="_blank">

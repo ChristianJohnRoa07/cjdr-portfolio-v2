@@ -26,6 +26,8 @@ const ButtonNav = () => {
     notClicked: { x: "0" },
   };
 
+ 
+
   return (
     <div className="w-[300px] md:w-[300px] lg:w-[450px]  hidden md:block ">
       <div className="flex flex-col gap-5 justify-start items-start text-black dark:text-white ">
