@@ -70,7 +70,7 @@ const ButtonAccounts = () => {
                 <button
                   key={btn.id}
                   //whileHover={{ scale: 1.1 }}
-                  className="fill-black dark:fill-white hover:animate-[spin_0.7s_ease-in-out]  
+                  className="fill-black dark:fill-white hover:stroke-cyan-700 hover:animate-[spin_0.7s_ease-in-out]  
                  "
                 >
                   {btn.icon}

@@ -30,17 +30,19 @@ const TopComponent = (props) => {
           <Button
             size="sm"
             variant="outlined"
-            className="group flex items-center gap-3   dark:text-white dark:border-white"
+            className="group flex items-center gap-2   dark:text-white dark:border-white"
           >
             Download CV
+
             <div
               className="group-hover:transition 
             group-hover:animate-bounce
-            group-hover:duration-75 
+            group-hover:duration-75
+             
            "
             >
               <svg
-                className="fill-black dark:fill-white"
+                className="fill-black dark:fill-white group-hover:fill-cyan-700"
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"

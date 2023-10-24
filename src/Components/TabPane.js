@@ -37,7 +37,7 @@ const TabPane = (props) => {
             group-hover:delay-20
             group-hover:-translate-y-1 
             group-hover:translate-x-2
-               
+            group-hover:fill-cyan-700
             "
             >
               <svg
