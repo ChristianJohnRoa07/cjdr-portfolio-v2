@@ -103,7 +103,7 @@ const Experience = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <Card className=" w-[400px] md:w-[700px]">
+      <Card className="w-[350px] sm:w-[400px] md:w-[700px]">
        
           {experiences.map((experience) => {
             return (
@@ -127,7 +127,7 @@ const Experience = () => {
                     >
                       {experience.companyName}
                     </Typography>
-                    <Typography className="text-justify font-poppins text-sm md:text-md text-gray-700 dark:text-gray-500">
+                    <Typography className="text-left font-poppins text-sm md:text-md text-gray-700 dark:text-gray-500">
                       {experience.jobDescription}
                     </Typography>
                     <Typography

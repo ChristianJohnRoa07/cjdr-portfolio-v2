@@ -238,7 +238,7 @@ const ButtonCard = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.6 }}
           >
-            <Card ref={ref} className=" w-[400px] md:w-[400px] lg:w-[700px]">
+            <Card ref={ref} className=" w-[350px] md:w-[400px] lg:w-[700px]">
               <a
                 key={proj.id}
                 href={proj.projLink}
@@ -263,7 +263,6 @@ const ButtonCard = () => {
                           />
                         </Typography>
                         <div className="flex justify-center ">
-                         
                           <div className="flex flex-row gap-3">
                             {proj.projTechs.map((projTech) => {
                               return (
@@ -285,13 +284,15 @@ const ButtonCard = () => {
                           </Typography>
 
                           {proj.projLink !== null ? (
-                            <div className="flex justify-end dark:fill-white group-hover:transition 
+                            <div
+                              className="flex justify-end dark:fill-white group-hover:transition 
                             group-hover:ease-in-out 
                             group-hover:delay-20
                             group-hover:translate-x-3 
                             group-hover:scale-125 
                             group-hover:fill-cyan-700
-                            ">
+                            "
+                            >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="18"

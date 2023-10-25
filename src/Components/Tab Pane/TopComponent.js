@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Switch, Button } from "@material-tailwind/react";
-import { color } from "framer-motion";
-import { motion, AnimatePresence } from "framer-motion";
+
+
 
 const TopComponent = (props) => {
   const { setDarkModeStatus, isDarkMode } = props;
@@ -24,6 +24,7 @@ const TopComponent = (props) => {
           }}
         />
       </div>
+
 
       <div>
         <a href={link} rel="noreferrer" target="_blank">
