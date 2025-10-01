@@ -1,9 +1,9 @@
 import React from "react";
 
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 
 const DevsInfo = () => {
-  const texts = ["Junior Frontend Developer", "Aspiring Fullstack Developer"];
+  const texts = ["Junior Frontend Developer", 1000 , "Aspiring Fullstack Developer", 1000];
   return (
     <div className=" w-[300px]  md:w-[300px] lg:w-[480px]">
       <div className="flex flex-col gap-1 text-black dark:text-white">
@@ -11,7 +11,7 @@ const DevsInfo = () => {
           Christian John Roa
         </span>
         <span className="font-poppins font-[500] text-md md:text-lg lg:text-xl">
-          <Typed strings={texts} typeSpeed={40} backSpeed={50} loop />
+          <TypeAnimation sequence={texts} speed={40} deletionSpeed={50} repeat={Infinity} />
         </span>
       </div>
     </div>
