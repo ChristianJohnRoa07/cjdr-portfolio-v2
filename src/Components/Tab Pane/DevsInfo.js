@@ -3,7 +3,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
 const DevsInfo = () => {
-  const texts = ["Junior Frontend Developer", 1000 , "Aspiring Fullstack Developer", 1000];
+  const texts = ["Full-Stack Developer", 1000 , "SQL Developer", 1000];
   return (
     <div className=" w-[300px]  md:w-[300px] lg:w-[480px]">
       <div className="flex flex-col gap-1 text-black dark:text-white">
