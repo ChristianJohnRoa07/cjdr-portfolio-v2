@@ -18,12 +18,12 @@ module.exports = withMT({
         poppins: ["Poppins", "sans-serif"],
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 30s linear infinite",
+        "scroll-slow": "scroll 30s linear infinite",
       },
       keyframes: {
-        "infinite-scroll": {
+        "scroll": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(-50%)" },
         },
       },
     },
