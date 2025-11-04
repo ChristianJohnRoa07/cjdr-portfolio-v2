@@ -1,40 +1,25 @@
   const sqlTech = [
     {
       id: 0,
-      text: "MSSQL", // Keeping text concise, as SSMS is part of MSSQL
+      text: "MSSQL",
       icon: (
         <svg
           height="50px"
           width="50px"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 256 256" // Corrected viewBox to fit the content
+          viewBox="0 0 256 256"
           style={{ display: "block" }}
         >
-          {/* 1. The SQL Database Cylinder (Blue) */}
-
-          {/* Top Ellipse */}
           <ellipse cx="128" cy="48" rx="100" ry="40" fill="#0078D4" />
-
-          {/* Main body of the cylinder */}
           <rect x="28" y="48" width="200" height="160" fill="#0078D4" />
-
-          {/* Bottom ellipse */}
           <ellipse cx="128" cy="208" rx="100" ry="40" fill="#0078D4" />
-
-          {/* Inner-most ellipse (highlight/border for the top) */}
           <ellipse cx="128" cy="48" rx="95" ry="35" fill="#006AC1" />
-
-          {/* Secondary ellipse (middle section) */}
           <ellipse cx="128" cy="128" rx="100" ry="40" fill="#0078D4" />
           <ellipse cx="128" cy="128" rx="95" ry="35" fill="#006AC1" />
-
-          {/* Third ellipse (bottom section) */}
           <ellipse cx="128" cy="208" rx="100" ry="40" fill="#0078D4" />
           <ellipse cx="128" cy="208" rx="95" ry="35" fill="#006AC1" />
-
-          {/* 2. The SSMS Tool/Wrench Overlay (Optional: Lighter Blue or White) */}
           <g transform="translate(140, 0) scale(0.4)">
-            {/* Simple Wrench Shape - White/Light Blue for visibility */}
+            
             <path
               fill="#FFFFFF"
               d="M141.69 135.03l18.89 18.89-62.8 62.8-18.89-18.89c-30.01-30.01-30.01-78.71 0-108.72l18.89-18.89c30.01-30.01 78.71-30.01 108.72 0l-18.89 18.89c-20.01-20.01-52.51-20.01-72.51 0l-18.89 18.89c-20.01 20.01-20.01 52.51 0 72.51l62.8 62.8z"
