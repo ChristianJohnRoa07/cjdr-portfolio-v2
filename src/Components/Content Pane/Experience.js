@@ -11,17 +11,17 @@ import experiences from "../../constants/experiences";
 const Experience = () => {
   return (
     <div className="flex justify-center items-center">
-      <Card className="w-[350px] sm:w-[400px] md:w-[700px]">
+      <Card className="w-[450px] md:w-[500px] lg:w-[700px]">
        
           {experiences.map((experience) => {
             return (
-              <CardBody className="group bg-gray-100 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-sm">
+              <CardBody className="group bg-gray-100 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800">
                 <div className="flex flex-row gap-2 md:gap-3">
                   <div className="w-[600px] md:w-[110%]">
                     <Typography
                       variant="h8"
                       color="blue-gray"
-                      className="mb-2 font-poppins text-xs md:text-lg text-gray-700 dark:text-gray-500"
+                      className="mb-2 font-poppins text-xs md:text-md text-gray-700 dark:text-gray-500"
                     >
                       {experience.duration}
                     </Typography>
