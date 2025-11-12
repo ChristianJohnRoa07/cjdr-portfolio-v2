@@ -4,7 +4,7 @@ const experiences = [
         companyName: "Blackfort Consulting Inc.",
         jobDescription:
             "Developed, and deployed resilient, scalable technical solutions using different technologies, consistently ensuring high standards for code quality, security, and performance.",
-        duration: "July 2025 - Up to date",
+        duration: "Jul 2025 - Up to date",
         techStacks: [
             {
                 id: 0,
@@ -162,7 +162,7 @@ const experiences = [
         companyName: "Gardenia Bakeries Philippines Inc.",
         jobDescription:
             "Developed and deployed responsive front-end features and back-end solutions for web applications using React JS, PHP Laravel, and SQL. Designed and implemented RESTful APIs to ensure seamless integration between front-end and back-end systems.",
-        duration: "December 2023 - July 2025",
+        duration: "Dec 2023 - Jul 2025",
         techStacks: [
             {
                 id: 0,
