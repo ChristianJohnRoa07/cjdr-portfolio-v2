@@ -16,8 +16,8 @@ const Experience = () => {
           {experiences.map((experience) => {
             return (
               <CardBody className="group bg-gray-100 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800">
-                <div className="flex flex-row gap-2 md:gap-3">
-                  <div className="w-[600px] md:w-[110%]">
+                <div className="flex flex-row gap-4 md:gap-6">
+                  <div className="w-full md:w-1/4 md:min-w-[180px]">
                     <Typography
                       variant="h8"
                       color="blue-gray"
@@ -27,7 +27,7 @@ const Experience = () => {
                     </Typography>
                   </div>
 
-                  <div className="flex flex-col gap-3 ">
+                  <div className="flex flex-col gap-3 items-start">
                     <Typography
                       variant="h5"
                       color="blue-gray"
@@ -35,7 +35,7 @@ const Experience = () => {
                     >
                       {experience.companyName}
                     </Typography>
-                    <Typography className="text-left font-poppins text-sm md:text-md text-gray-700 dark:text-gray-500">
+                    <Typography className="text-start font-poppins text-sm md:text-md text-gray-700 dark:text-gray-500">
                       {experience.jobDescription}
                     </Typography>
                     <Typography
