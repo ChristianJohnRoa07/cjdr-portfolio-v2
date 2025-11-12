@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import { buttonNav } from "../ButtonData";
+import { buttonNav } from "../../constants/ButtonData";
 
 //import { Link } from "react-scroll";
 
